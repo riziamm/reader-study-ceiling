@@ -1,0 +1,64 @@
+{
+  "pct_at_max": 73.07142857142857,
+  "p_o": 0.615530303030303,
+  "p_e": 0.6305526859504132,
+  "median_sensitive": 0.024077926977089208,
+  "n_fleiss_negative": 6,
+  "n_strata": 8,
+  "between_case_share": 3.9196612318818858,
+  "within_case_pooled": 0.1997126436781609,
+  "n_criteria_excluding_zero": 3,
+  "n_criteria": 4,
+  "recode_n_higher": 4,
+  "recode_median_change": 0.1581196838328253,
+  "recode_median_change_ci": [
+    0.10556385640320776,
+    0.22489116162918113
+  ],
+  "recode_change_ci": {
+    "Absence of Artifacts": [
+      0.031122748986635435,
+      0.23132124054943523
+    ],
+    "Anatomical Accuracy": [
+      0.005960037146068092,
+      0.2722343496171119
+    ],
+    "Boundary Sharpness": [
+      0.08892792279011355,
+      0.2596553477632824
+    ],
+    "Overall Realism": [
+      0.12435574285807033,
+      0.3153866088058984
+    ]
+  },
+  "recode_p_e_difference": 0.6271979564897585,
+  "loro_median_range": [
+    0.00020485341923749895,
+    0.03899261179427567
+  ],
+  "loro_positive_range": [
+    3,
+    5
+  ],
+  "loro_full_median": 0.024077926977089208,
+  "loro_full_positive": 3,
+  "loro_difference_worst": 4,
+  "loro_difference_change_range": [
+    0.09977259266501545,
+    0.21087615367406332
+  ],
+  "n_substantive_flips": 2,
+  "max_stratum_shift": 0.24297907159940865,
+  "locality": {
+    "global": 0.3352,
+    "patch_linked": 0.061
+  },
+  "locality_p": 6.093249717963288e-05,
+  "loco_worst_pct": 10.901396529834948,
+  "position_delta": -0.021551724137931036,
+  "position_p": 0.543237428504387,
+  "n_tie_conventions": 7,
+  "tie_max_p": 0.0002311160804356891
+}

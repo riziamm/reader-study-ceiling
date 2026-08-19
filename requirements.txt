@@ -1,0 +1,11 @@
+numpy==1.26.4
+pandas==2.3.3
+scipy==1.12.0
+statsmodels==0.14.6
+pingouin==0.6.1
+krippendorff==0.8.2
+irrCAC==0.4.4
+scikit-learn==1.8.0
+matplotlib==3.10.8
+PyYAML==6.0.3
+tabulate==0.10.0

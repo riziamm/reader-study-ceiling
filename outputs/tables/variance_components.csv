@@ -1,0 +1,9 @@
+stratum,criterion,model,var_case,var_reader,var_residual,pct_case,n_cases,n_readers
+Absence of Artifacts · Model A,Absence of Artifacts,Model A,0.0141,0.0179,0.145,7.9642,44,4
+Absence of Artifacts · Model B,Absence of Artifacts,Model B,0.0036,0.0473,0.2065,1.4031,44,4
+Anatomical Accuracy · Model A,Anatomical Accuracy,Model A,0.0529,0.0291,0.2721,14.9309,44,4
+Anatomical Accuracy · Model B,Anatomical Accuracy,Model B,0.161,0.0572,0.7326,16.9361,44,4
+Boundary Sharpness · Model A,Boundary Sharpness,Model A,0.0015,0.1163,0.1674,0.5091,42,4
+Boundary Sharpness · Model B,Boundary Sharpness,Model B,0.0072,0.1063,0.1153,3.1569,44,4
+Overall Realism · Model A,Overall Realism,Model A,0.0079,0.1008,0.1473,3.0965,44,4
+Overall Realism · Model B,Overall Realism,Model B,0.0248,0.1575,0.3482,4.6824,44,4

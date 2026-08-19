@@ -1,0 +1,5 @@
+criterion,n_pairs,mean_delta,ci_lo,ci_hi,pct_tied,excludes_zero
+Absence of Artifacts,176,0.1023,0.017,0.1818,82.3864,True
+Anatomical Accuracy,176,0.4432,0.2386,0.6534,57.3864,True
+Boundary Sharpness,168,0.0179,-0.0595,0.0952,80.9524,False
+Overall Realism,176,0.2273,0.1193,0.3409,72.7273,True

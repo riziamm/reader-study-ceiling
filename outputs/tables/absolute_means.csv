@@ -1,0 +1,5 @@
+criterion,mean_Model A,ci_lo_Model A,ci_hi_Model A,mean_Model B,ci_lo_Model B,ci_hi_Model B
+Absence of Artifacts,4.8523,4.7841,4.9148,4.75,4.6818,4.8182
+Anatomical Accuracy,4.6761,4.5682,4.7727,4.233,4.0568,4.4034
+Boundary Sharpness,4.7798,4.7143,4.8393,4.767,4.7102,4.8182
+Overall Realism,4.733,4.6705,4.7898,4.5057,4.4091,4.6023

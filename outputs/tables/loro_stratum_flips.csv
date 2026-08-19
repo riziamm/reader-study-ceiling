@@ -1,0 +1,4 @@
+stratum,before,after,marginal
+Absence of Artifacts · Model B,-0.0109,0.0047,True
+Overall Realism · Model B,-0.0291,0.0112,False
+Boundary Sharpness · Model B,-0.0722,0.1708,False

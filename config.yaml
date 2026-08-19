@@ -1,0 +1,33 @@
+# synthetic or real; DATASET=real overrides
+dataset: synthetic
+seed: 20260729
+
+study:
+  n_readers: 4
+  n_cases: 44
+  scale: [1, 5]
+  criteria: ["Overall Realism", "Anatomical Accuracy", "Boundary Sharpness",
+             "Absence of Artifacts"]
+  # the Absence of Artifacts item was missing for cases 22 and 44 through a
+  # form-generation fault: 1408 scheduled - 8 = 1400 valid ratings
+  known_absent: [{case_num: 22, position: "B", criterion: "Boundary Sharpness"},
+                 {case_num: 44, position: "B", criterion: "Boundary Sharpness"}]
+  # MS Forms export: "<criterion> -- Image <A|B><case suffix>"
+  rating_regex: '^(?P<criterion>.+?)\s*--\s*Image\s*(?P<position>[AB])(?P<case_suffix>\d*)$'
+  drop_columns: ["Email", "Name", "Full Name", "Email Address"]
+
+# Appendix D locality check. Masks were never shown, so this confounds spatial
+# locality with breadth of construct and is reported, not interpreted.
+criterion_type:
+  "Boundary Sharpness":   patch_linked
+  "Absence of Artifacts": patch_linked
+  "Overall Realism":      global
+  "Anatomical Accuracy":  global
+
+analysis:
+  n_boot: 5000
+  ci: 0.95
+  alpha: 0.05
+  # a stratum sign change under reader removal counts as marginal if the value
+  # is within this band of zero on both sides; declared before the check was run
+  marginal_band: 0.02

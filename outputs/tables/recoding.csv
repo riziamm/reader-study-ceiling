@@ -1,0 +1,5 @@
+criterion,alpha_absolute,alpha_difference,fleiss_absolute,fleiss_difference,p_o_difference,p_e_difference,marginal_sign,change_ci_lo,change_ci_hi,n_cases,change_alpha,change_fleiss
+Absence of Artifacts,0.0101,0.1433,-0.0057,0.0564,0.7159,0.6989,-1:4% 0:82% 1:14%,0.0311,0.2313,44,0.1332,0.0621
+Anatomical Accuracy,0.1273,0.2655,0.0628,0.304,0.6212,0.4558,-1:8% 0:57% 1:35%,0.006,0.2722,44,0.1382,0.2412
+Boundary Sharpness,-0.11,0.068,-0.1049,-0.0217,0.6667,0.6738,-1:8% 0:81% 1:11%,0.0889,0.2597,42,0.178,0.0832
+Overall Realism,-0.0911,0.1299,-0.115,0.0787,0.6136,0.5806,-1:5% 0:73% 1:22%,0.1244,0.3154,44,0.221,0.1936
