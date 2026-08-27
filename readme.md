@@ -1,11 +1,11 @@
-# How Reliability Coefficients Fail Reader Studies at the Fidelity Ceiling
+# Fidelity Ceilings Break Reliability Coefficients in Generative AI Evaluation
 
 Code for the paper. Four radiologists rated two inpainting models on 44 cases
 and four criteria; Judgements fell at the scale maximum, and
 chance-corrected agreement went negative in six of eight strata. 
 This reproduces every table and figure.
 
-## Run it
+## Run
 
 ```bash
 pip install -r requirements.txt
@@ -18,12 +18,12 @@ every table.
 The simulation is separate as it needs compute:
 
 ```bash
-make sim-quick            # 12-cell smoke subset, a few minutes
+make sim-quick            # a few minutes
 make sim WORKERS=32       # full grid, 162 cells, ~53 core-hours
-make paper-sim            # adds Tables B1-B3, D1 and Figure 3
+make paper-sim            # Tables B1-B3, D1 and Figure 3
 ```
 
-The sweep checkpoints per cell and per 25 replicates, so it resumes if
+The sweep checkpoints per cell and per 25 replicates, so it can be resumed if
 interrupted. Per-cell seeds derive from the cell index, so results are
 identical regardless of worker count.
 
@@ -70,27 +70,3 @@ the single source for numbers quoted in the paper.
 | Tables B1-B3, B2 critical values, D1 | `paper.py --sim` |
 | Appendix D robustness | `analysis.locality`, `analysis.robustness`, `analysis.loro` |
 
-## Notes that matter for reading the numbers
-
-- **Reader is a fixed effect.** Four levels cannot identify a variance
-  component, and the random-effect reading is the generalisation this design
-  cannot support. Case carries the random intercept, and every bootstrap
-  interval is clustered on the case.
-- **Eight ratings are missing** because the form omitted one item for cases 22
-  and 44: 1408 scheduled, 1400 valid, 696 complete within-case pairs. They are
-  dropped, never imputed.
-- **Leave-one-reader-out refits are ordered by their resulting value**, not by
-  reader index. With four readers, a labelled row plus the full-sample value
-  identifies that reader by subtraction.
-- **`criterion_type` in `config.yaml` is a pre-declared classification**, fixed
-  before results existed. The masks were never shown to readers, so the
-  locality check confounds spatial locality with breadth of construct; it is
-  reported because it was pre-declared, and not interpreted.
-- **The generator's `CASE_SD = 0.18` is frozen.** It was fitted jointly with the
-  ceiling levels against two measured properties of the ratings, the share at
-  the scale maximum and the between-case variance share, before any power
-  result existed.
-- **The sweep's paired analysis discards ties**, whereas the study's own paired
-  analysis uses the full ordinal difference. Ties cannot be counted as losses
-  instead: with ties as losses P(A wins) is far from 0.5 under the null, so the
-  tested hypothesis is false by construction.
