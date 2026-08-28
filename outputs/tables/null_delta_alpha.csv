@@ -1,0 +1,2 @@
+n_reps,median,ci_lo,ci_hi,observed,pct_of_observed,pct_null_reps_ge_observed
+2000,-0.0053,-0.0636,0.0527,0.158,-0.0334,0.0

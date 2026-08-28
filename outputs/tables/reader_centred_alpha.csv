@@ -1,0 +1,5 @@
+criterion,alpha_absolute,alpha_centred,ci_lo,ci_hi,alpha_difference,frac_of_the_way_to_difference
+Absence of Artifacts,0.0101,-0.0334,-0.1235,0.0534,0.1433,-0.327
+Anatomical Accuracy,0.1273,0.1096,0.0177,0.1873,0.2655,-0.128
+Boundary Sharpness,-0.11,-0.0746,-0.1437,-0.0003,0.068,0.199
+Overall Realism,-0.0911,-0.0025,-0.0874,0.0722,0.1299,0.401

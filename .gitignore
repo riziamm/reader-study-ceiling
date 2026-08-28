@@ -12,3 +12,9 @@ outputs/tables/_ckpt_*.csv
 .venv/
 __pycache__/
 *.pyc
+
+# per-reader ratings are not released
+data/released/
+
+# per-reader ratings are not released
+data/released/
