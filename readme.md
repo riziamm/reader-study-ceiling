@@ -4,6 +4,7 @@ Code for the paper:
 -	Rizia, M. M. & Suominen, H. (2026). Fidelity Ceilings Break Reliability
 Coefficients in Generative AI Evaluation. In Proceeding NeurIPS 2026 Workshop
 TAE (Trust-AI-Eval): Can We Trust AI Evaluation?, Sydney, Australia.
+
 Four radiologists rated two inpainting models on 44 cases
 and four criteria; Judgements fell at the scale maximum, and
 chance-corrected agreement went negative in six of eight strata. 
